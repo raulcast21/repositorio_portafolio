@@ -8,17 +8,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
 
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+
+<script src="https://kit.fontawesome.com/86ec847a10.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body class="w3-black">
 
@@ -27,7 +22,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Avatar image in top left corner -->
 
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
+    <i class="fa fa-home w3-xxlarge"></i> <!-- saltan por una ID-->
     <p>HOME</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -47,10 +42,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button Navbar" >HOME</a>
+    <a href="#about" class="w3-bar-item w3-button Navbar" >ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button Navbar" >PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button Navbar" >CONTACT</a>
   </div>
 </div>
 
@@ -60,7 +55,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Raúl Cruz.</h1>
     <p>Mechatronics engineer.</p>
-    <img src="1.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    <img src="/img/1.jpg" alt="me" class="raul-image" width="992" height="1108">
   </header>
 
   <!-- exp section-->
@@ -96,7 +91,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>Utest/Meta |  February 2022 - December 2022
     </p>
 
-    <ul class="hola">
+    <ul class="margen_abajo">
       <li>Tested system enhancements prior to installation 
         into the production environment with Postman sending 
         and evaluation API requests. </li>
@@ -106,9 +101,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         issues through JavaScript debugging with Chrome dev tools.</li>
 
     </ul>
-    <br>
-    <br>
-    <br>
+  
 
     <div class="w3-padding-64 w3-content" id="photos">
       <h2 class="w3-text-light-grey">Portfolio</h2>
@@ -118,7 +111,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <!-- Portfolio -->
 
-    <ul>
+    <ul class="margen_abajo_mas">
       <li>P1 </li>
       <li>P2</li>
       <li>P3</li>
@@ -126,9 +119,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <li>P5</li>
       <li>P6</li>
     </ul>
-    <br>
-    <br>
-    <br>
+ 
 
     
     <!-- Uni -->
@@ -139,9 +130,47 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>Tecnologico de monterrey | Graduation date June 2024
     </p>
 
-    <br>
-    <br>
-    <br>
+          <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" >
+      <h2 class="w3-text-light-grey">Certifications</h2>
+      <hr style="width:200px" class="w3-opacity"> 
+      
+
+      <h3 class="w3-text-light-grey"> Tecnologico de monterrey </h3>
+      <div class="w3-section">
+       <p class="margen_abajo"> Leadership skills in daily life  </p>
+      </div>
+
+      <h3 class="w3-text-light-grey mar"> English level: U. Cambridge / IELTS </h3>
+      <div class="w3-section">
+        <p class="margen_abajo"> Business English Bulats (B2+)   </p>
+      </div>
+
+      <h3 class="w3-text-light-grey"> Platzi </h3>
+      <div class="w3-section">
+        <p class="margen_abajo"> Frontend developer  </p>
+      </div>
+
+      <h3 class="w3-text-light-grey"> Fortinet </h3>
+      <div class="w3-section">
+        <p> Fundamentals in Cybersecurity      </p>
+        <p class="margen_abajo"> Associate in Cybersecurity     </p>
+      </div>
+
+      <h3 class="w3-text-light-grey"> Splunk </h3>
+      <div class="w3-section">
+        <p class="margen_abajo"> Queries for SOC Analyst   </p>
+      </div>
+
+      <h3 class="w3-text-light-grey"> Crowdstrike </h3>
+      <div class="w3-section">
+        <p class="margen_abajo"> Security & IT operations  </p>
+      </div>
+
+    <!-- End Contact Section -->
+    </div>
+    
+   
     
     <h2 class="w3-text-light-grey">I.T. Skills</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -180,34 +209,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- testing                 -->
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class="w3-padding-64 w3-pirata" >
     
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="Bootstrap_logo.svg.png" style="width:20%">
-        <img src="2.png" style="width:20%">
-        <img src="3.png" style="width:20%">
-        <img src="9.png" style="width:20%">
-        <img src="8.png" style="width:20%">
-        <img src="4.png" style="width:20%">
-        <img src="5.png" style="width:20%"><!-- border raidius (propiedad)-->
-        <img src="6.png" style="width:20%">
-        <img src="7.png" style="width:20%">
+    <div>
+      <div class="hola1">
+        <img src="/img/Bootstrap_logo.svg.png" class="redondeo"  ><!--class = "img_radius" // le cambie el nombre a la clase y paso de jalar a todas a ahora ignorar a todas-->
+        <img src="/img/2.png" class="redondeo" > 
+        <img src="/img/3.png" class="redondeo" >
+        <img src="/img/9.png" class="redondeo" >
+        <img src="/img/8.png" class="redondeo" >
+        <img src="/img/4.png" class="redondeo" >
+        <img src="/img/5.png" class="redondeo" > <!-- border raidius (propiedad)-->
+        <img src="/img/7.png" class="redondeo" >
       </div>
 
-      <div class="w3-half">
-        <img src="crowdstrike.png" style="width:20%">
-        <img src="splunk.png" style="width:20%">
-        <img src="Featured_Content_500x280_Office_tile.jpg" style="width:20%">
-        <img src="git-icon-1788c.png" style="width:20%">
-        <img src="postman.jpg" style="width:20%">
-        <img src="Trello-Emblema.png" style="width:20%">
-        <img src="VSC.jpeg" style="width:20%">
-        <img src="64e79ca5aff2fb7295bfddf9_github-que-es.jpg" style="width:20%">
-        <img src="Apache_NetBeans_Logo.svg" style="width:20%">
-        <img src="descarga.jpeg" style="width:20%">
-        <img src="ps.png" style="width:20%">
+      <div>
+        <img src="/img/crowdstrike.png" class="redondeo">
+        <img src="/img/splunk.png" class="redondeo">
+        <img src="/img/Featured_Content_500x280_Office_tile.jpg" class="redondeo">
+        <img src="/img/git-icon-1788c.png" class="redondeo">
+        <img src="/img/postman.jpg" class="redondeo">
+        <img src="/img/Trello-Emblema.png" class="redondeo">
+        <img src="/img/VSC.jpeg" class="redondeo">
+        <img src="/img/64e79ca5aff2fb7295bfddf9_github-que-es.jpg" class="redondeo">
+        <img src="/img/Apache_NetBeans_Logo.svg" class="redondeo">
+        <img src="/img/descarga.jpeg" class="redondeo">
+        <img src="/img/ps.png" class="redondeo">
+        
 
       </div>
     <!-- End photo grid -->
@@ -221,85 +250,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
 
-  
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Certifications</h2>
-    <hr style="width:200px" class="w3-opacity"> 
-    <br>
 
-    <h3 class="w3-text-light-grey"> Tecnologico de monterrey </h3>
-    <div class="w3-section">
-      <p> Leadership skills in daily life  </p>
-    </div><br>
+  <h3 class=" w3-text-light-grey margen-arriba-s  centrado" id="contact"> <b>Contact</b></h3>
 
-    <h3 class="w3-text-light-grey"> English level: U. Cambridge / IELTS </h3>
-    <div class="w3-section">
-      <p> Business English Bulats (B2+)   </p>
-    </div><br>
+  <!-- Footer -->
+  <footer class="centrado w3-pirata hola raul-xlarge">
+     <a href="https://github.com/raulcast21" target="_blank" class="fa-brands fa-github ">    </a> 
+     <a href="https://www.linkedin.com/in/raul-cruz-castrejon-2a32391a8/" target="_blank" class="fa-brands fa-linkedin">    </a>
 
-    <h3 class="w3-text-light-grey"> Platzi </h3>
-    <div class="w3-section">
-      <p> Frontend developer  </p>
-    </div><br>
-
-    <h3 class="w3-text-light-grey"> Fortinet </h3>
-    <div class="w3-section">
-      <p> Fundamentals in Cybersecurity      </p>
-      <p> Associate in Cybersecurity     </p>
-    </div><br>
-
-    <h3 class="w3-text-light-grey"> Splunk </h3>
-    <div class="w3-section">
-      <p> Queries for SOC Analyst   </p>
-    </div><br>
-
-    <h3 class="w3-text-light-grey"> Crowdstrike </h3>
-    <div class="w3-section">
-      <p> Security & IT operations  </p>
-    </div><br>
-
-  <!-- End Contact Section -->
-  </div>
-
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mexico City, MX</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +52 7475455645</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: raul_ccast@outlook.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-f w3-hover-opacity"></i>
-    <a href="https://www.instagram.com/castrejonraul/" target="_blank" class="fa fa-instagram w3-hover-opacity"></a>
-    <a href="https://www.linkedin.com/in/raul-cruz-castrejon-2a32391a8/" target="_blank" class="fa fa-linkedin w3-hover-opacity">   </a>
-    <p class="w3-medium">Powered by <a href="https://www.linkedin.com/in/raul-cruz-castrejon-2a32391a8/" target="_blank" class="w3-hover-text-green">Raul Cruz C.</a></p>
   <!-- End footer -->
   </footer>
 
+  
 <!-- END PAGE CONTENT -->
 </div>
 
 </body>
-</html>

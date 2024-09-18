@@ -1,0 +1,77 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.Navbar_f{
+    width:25% !important
+}
+
+.raul-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+
+
+.colores{
+    width:42px;
+    height:42px;
+    text-align: center;
+}
+
+.colores :hover{
+    
+    background-color: white;
+    color: black!important
+
+}
+
+
+.margen_abajo{
+ margin-bottom: 50px;
+}
+
+.margen_arriba{
+    margin-top: 500px;
+   }
+
+.margen_abajo_mas{
+ margin-bottom: 200px;
+}
+
+.hola :hover{
+    
+    
+    background-color: grey;
+    color: black!important
+
+
+}
+
+
+
+
+
+.margen-arriba-s{
+    margin-top: 200px;
+
+}
+
+.centrado{
+    text-align: center;
+
+}
+
+.redondeo {
+    border-radius: 50%;
+    width:10%;
+  }
+
+
+
+
+
+.w3-pirata{margin-left:auto;margin-right:auto}
+.w3-pirata{max-width:980px}
+.raul-xlarge{font-size:24px!important}
