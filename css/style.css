@@ -19,6 +19,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     max-width:100%;
     height:auto
 }
+
 img{vertical-align:middle}
 
 .margen_abajo{
@@ -56,3 +57,23 @@ img{vertical-align:middle}
     font-size:24px!important
 }
 
+
+
+/*juntar todas las clases de la imagen
+
+.w3-padding-large{padding:12px 24px!important}
+
+.w3-container:after,.w3-container:before,{content:"";display:table;clear:both}
+
+.w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+
+.w3-center{display:inline-block;width:auto}
+.w3-center{text-align:center}
+@media (max-width:992px)
+.w3-center{text-align:center!important}
+
+.raul-image{
+    max-width:100%;
+    height:auto
+}
+*/
